@@ -1,12 +1,11 @@
-(function(window) {
-  'use strict';
-   function defineShadow() {
-      Shadow.alert = function() {
-        alert("this is a test, from the Shadow framework")
-      };
-      return Shadow;
-   }
-   if(typeof(Shadow) === 'undefined') {
-    window.Shadow = defineShadow();
-   }
-}) (window);
+function $(selector){
+  var self = {};
+  self.selector = selector;
+  self.element = document.querySelector(self.selector);
+  
+  self.html = function(){
+    return self.element;
+  }
+  self.
+  return self
+}
